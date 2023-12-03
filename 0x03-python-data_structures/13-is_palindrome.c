@@ -1,12 +1,13 @@
 #include "lists.h"
-#include <stdio.h>
 #include <stdlib.h>
+#include <stdio.h>
+
 /**
- * add_nodeint - adds a new node
- * @head: head
- * @n: int to add
- * Return: address of the new element
- */
+*add_nodeint - adds a new node at the beginning of a listint_t list
+*@head: head of listint_t
+*@n: int to add in listint_t list
+*Return: address of the new element, or NULL if it failed
+*/
 listint_t *add_nodeint(listint_t **head, const int n)
 {
 	listint_t *new;
@@ -20,10 +21,10 @@ listint_t *add_nodeint(listint_t **head, const int n)
 	return (new);
 }
 /**
- * is_palindrome - identify
- * @head: head
- * Return: 1 or 0
- */
+*is_palindrome - identify if a syngle linked list is palindrome
+*@head: head of listint_t
+*Return: 1 if it is palindrome else 0
+*/
 int is_palindrome(listint_t **head)
 {
 	listint_t *head2 = *head;
@@ -50,4 +51,3 @@ int is_palindrome(listint_t **head)
 	free_listint(aux);
 	return (1);
 }
-
