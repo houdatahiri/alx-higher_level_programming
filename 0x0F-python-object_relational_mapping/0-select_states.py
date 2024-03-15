@@ -1,4 +1,4 @@
-#!/usr/bin/node
+#!/usr/bin/python3
 """ lists all state from db """
 import MYSQLdb
 import sys
