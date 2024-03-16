@@ -1,6 +1,6 @@
 #!/usr/bin/python3
 """ lists all states from db """
-import MYSQLdb
+import MySQLdb
 import sys
 
 
