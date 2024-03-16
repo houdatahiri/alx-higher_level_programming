@@ -1,6 +1,6 @@
 #!/usr/bin/python3
-""" lists all ststes from the databes hbtn_e0_0_usa """
-import MYSQLdb
+"""  lists all states from the database hbtn_0e_0_usa """
+import MySQLdb
 import sys
 
 
@@ -11,7 +11,7 @@ if __name__ == "__main__":
     match = sys.argv[4]
     cur.execute("SELECT * FROM states WHERE name LIKE %s", (match, ))
     rows = cur.fetchall()
-    for row in rows :
+    for row in rows:
         print(row)
     cur.close()
     db.close()
