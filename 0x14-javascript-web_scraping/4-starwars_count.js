@@ -1,9 +1,6 @@
-
 #!/usr/bin/node
-
 // Import the 'request' module
 const request = require('request');
-
 // Use the 'request' module to perform an HTTP GET request to the URL
 request(process.argv[2], function (error, response, body) {
   // Check if there was no error during the HTTP request.
